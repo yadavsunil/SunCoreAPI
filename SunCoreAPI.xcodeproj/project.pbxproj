@@ -16,6 +16,7 @@
 		46E09D6A269040F400F91223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E09D68269040F400F91223 /* Main.storyboard */; };
 		46E09D6C269040F500F91223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E09D6B269040F500F91223 /* Assets.xcassets */; };
 		46E09D6F269040F500F91223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E09D6D269040F500F91223 /* LaunchScreen.storyboard */; };
+		46E09D992690442E00F91223 /* SunCoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E09D982690442E00F91223 /* SunCoreAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		46E09D6B269040F500F91223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46E09D6E269040F500F91223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46E09D70269040F500F91223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E09D982690442E00F91223 /* SunCoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunCoreAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				46E09D43269040D600F91223 /* SunCoreAPI.h */,
 				46E09D44269040D600F91223 /* Info.plist */,
+				46E09D982690442E00F91223 /* SunCoreAPI.swift */,
 			);
 			path = SunCoreAPI;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					46E09D3F269040D600F91223 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					46E09D48269040D600F91223 = {
 						CreatedOnToolsVersion = 12.3;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E09D992690442E00F91223 /* SunCoreAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		46E09D55269040D600F91223 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Harman.SunCoreAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		46E09D56269040D600F91223 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,6 +492,7 @@
 		46E09D58269040D600F91223 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SunCoreAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +510,7 @@
 		46E09D59269040D600F91223 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SunCoreAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
