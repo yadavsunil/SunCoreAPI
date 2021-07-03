@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseAnalytics
 public final class SunCoreAPI {
 
     let name = "SunCoreAPI"

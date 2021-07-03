@@ -1,0 +1,6 @@
+framework module Pods_SunCoreAPIExamples {
+  umbrella header "Pods-SunCoreAPIExamples-umbrella.h"
+
+  export *
+  module * { export * }
+}
